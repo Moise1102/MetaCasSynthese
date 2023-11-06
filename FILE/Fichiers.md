@@ -1,123 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <md:node xmlns:md="http://www.stambia.com/md" defType="com.stambia.file.server" id="_FaryAHokEe6cgaTnMFlv7A" name="source" md:ref="resource.md#UUID_TECH_FILE_MD?fileId=UUID_TECH_FILE_MD$type=md$name=File?" internalVersion="v1.0.0">
-  <node defType="com.stambia.file.directory" id="_FoPs4HokEe6cgaTnMFlv7A">
-    <attribute defType="com.stambia.file.directory.path" id="_FpWgIHokEe6cgaTnMFlv7A" value="C:\source"/>
-    <node defType="com.stambia.file.file" id="_gtg3wXopEe6cgaTnMFlv7A" name="F_CLIENT_20231001">
-      <attribute defType="com.stambia.file.file.physicalName" id="_l9T9cHopEe6cgaTnMFlv7A" value="F_CLIENT_20231001.txt"/>
-      <attribute defType="com.stambia.file.file.type" id="_mQbGsHopEe6cgaTnMFlv7A" value="DELIMITED"/>
-      <attribute defType="com.stambia.file.file.lineToSkip" id="_oUyLIHopEe6cgaTnMFlv7A" value="0"/>
-      <attribute defType="com.stambia.file.file.charsetName" id="_puvnsHopEe6cgaTnMFlv7A" value="UTF-8"/>
-      <attribute defType="com.stambia.file.file.lineSeparator" id="_rjLZwHopEe6cgaTnMFlv7A" value="0D0A"/>
-      <attribute defType="com.stambia.file.file.header" id="_uw4E0HopEe6cgaTnMFlv7A" value="0"/>
-      <attribute defType="com.stambia.file.file.decimalSeparator" id="_wxsGAHopEe6cgaTnMFlv7A" value="2E"/>
-      <attribute defType="com.stambia.file.file.fieldSeparator" id="_gN__UHorEe6cgaTnMFlv7A" value="7C"/>
-      <attribute defType="com.stambia.file.file.stringDelimiter" id="_Pq1DwHoyEe6cgaTnMFlv7A"/>
-      <attribute defType="com.stambia.file.file.escapeChar" id="_Pq1DwXoyEe6cgaTnMFlv7A"/>
-      <attribute defType="com.stambia.file.file.lastLineToSkip" id="_Pq1DwnoyEe6cgaTnMFlv7A" value="0"/>
-      <node defType="com.stambia.file.record" id="_8vN0sXo5Ee6cgaTnMFlv7A" name="ENTETE">
-        <node defType="com.stambia.file.filter" id="_BAKFcno6Ee6cgaTnMFlv7A" name="entete">
-          <attribute defType="com.stambia.file.filter.value" id="_ERGRwHo6Ee6cgaTnMFlv7A" value="000"/>
-          <attribute defType="com.stambia.file.filter.start" id="_EctE0Ho6Ee6cgaTnMFlv7A" value="1"/>
-          <attribute defType="com.stambia.file.filter.length" id="_FFzFIHo6Ee6cgaTnMFlv7A" value="3"/>
-          <attribute defType="com.stambia.file.filter.operator" id="_FacfcHo6Ee6cgaTnMFlv7A" value="Equals"/>
-        </node>
-        <node defType="com.stambia.file.field" id="_HNE6sHo6Ee6cgaTnMFlv7A" name="TYPE_LIGNE" position="1">
-          <attribute defType="com.stambia.file.field.size" id="_HNE6sXo6Ee6cgaTnMFlv7A" value="3"/>
-          <attribute defType="com.stambia.file.field.type" id="_HNE6sno6Ee6cgaTnMFlv7A" value="String"/>
-          <attribute defType="com.stambia.file.field.physicalName" id="_HNE6s3o6Ee6cgaTnMFlv7A" value="TYPE_LIGNE"/>
-          <attribute defType="com.stambia.file.field.physicalSize" id="_88slIHo7Ee6cgaTnMFlv7A" value="3"/>
-        </node>
-        <node defType="com.stambia.file.field" id="_HNE6tHo6Ee6cgaTnMFlv7A" name="TYPE_FICHIER" position="2">
-          <attribute defType="com.stambia.file.field.size" id="_HNE6tXo6Ee6cgaTnMFlv7A" value="20"/>
-          <attribute defType="com.stambia.file.field.type" id="_HNE6tno6Ee6cgaTnMFlv7A" value="String"/>
-          <attribute defType="com.stambia.file.field.physicalName" id="_HNE6t3o6Ee6cgaTnMFlv7A" value="TYPE_FICHIER"/>
-          <attribute defType="com.stambia.file.field.physicalSize" id="__GUkEHo7Ee6cgaTnMFlv7A" value="20"/>
-        </node>
-        <node defType="com.stambia.file.field" id="_HNE6uHo6Ee6cgaTnMFlv7A" name="VERSION" position="3">
-          <attribute defType="com.stambia.file.field.size" id="_HNE6uXo6Ee6cgaTnMFlv7A" value="2"/>
-          <attribute defType="com.stambia.file.field.type" id="_HNE6uno6Ee6cgaTnMFlv7A" value="String"/>
-          <attribute defType="com.stambia.file.field.physicalName" id="_HNE6u3o6Ee6cgaTnMFlv7A" value="VERSION"/>
-          <attribute defType="com.stambia.file.field.physicalSize" id="_B7ezUHo8Ee6cgaTnMFlv7A" value="2"/>
-        </node>
-        <node defType="com.stambia.file.field" id="_HNE6xXo6Ee6cgaTnMFlv7A" name="SEQUENCE" position="6">
-          <attribute defType="com.stambia.file.field.size" id="_HNE6xno6Ee6cgaTnMFlv7A" value="6"/>
-          <attribute defType="com.stambia.file.field.type" id="_HNE6x3o6Ee6cgaTnMFlv7A" value="String"/>
-          <attribute defType="com.stambia.file.field.physicalName" id="_HNE6yHo6Ee6cgaTnMFlv7A" value="SEQUENCE"/>
-          <attribute defType="com.stambia.file.field.physicalSize" id="_L0tiQHo8Ee6cgaTnMFlv7A" value="6"/>
-        </node>
-        <node defType="com.stambia.file.field" id="_HNE6wXo6Ee6cgaTnMFlv7A" name="SOURCE" position="5">
-          <attribute defType="com.stambia.file.field.size" id="_HNE6wno6Ee6cgaTnMFlv7A" value="30"/>
-          <attribute defType="com.stambia.file.field.type" id="_HNE6w3o6Ee6cgaTnMFlv7A" value="String"/>
-          <attribute defType="com.stambia.file.field.physicalName" id="_HNE6xHo6Ee6cgaTnMFlv7A" value="SOURCE"/>
-          <attribute defType="com.stambia.file.field.physicalSize" id="_HqpVkHo8Ee6cgaTnMFlv7A" value="30"/>
-        </node>
-        <node defType="com.stambia.file.field" id="_HNE6vHo6Ee6cgaTnMFlv7A" name="DATE" position="4">
-          <attribute defType="com.stambia.file.field.size" id="_HNE6vXo6Ee6cgaTnMFlv7A" value="30"/>
-          <attribute defType="com.stambia.file.field.type" id="_HNE6vno6Ee6cgaTnMFlv7A" value="String"/>
-          <attribute defType="com.stambia.file.field.format" id="_HNE6v3o6Ee6cgaTnMFlv7A" value=""/>
-          <attribute defType="com.stambia.file.field.physicalName" id="_HNE6wHo6Ee6cgaTnMFlv7A" value="DATE"/>
-          <attribute defType="com.stambia.file.field.physicalSize" id="_EEUIEHo8Ee6cgaTnMFlv7A" value="30"/>
-        </node>
-      </node>
-    </node>
-    <node defType="com.stambia.file.file" id="_b3q4cHpQEe6QncsbWkl3eg" name="F_CLIENT_20231001">
-      <attribute defType="com.stambia.file.file.type" id="_b6tlYHpQEe6QncsbWkl3eg" value="DELIMITED"/>
-      <attribute defType="com.stambia.file.file.charsetName" id="_b6zsAHpQEe6QncsbWkl3eg"/>
-      <attribute defType="com.stambia.file.file.lineSeparator" id="_b61hMHpQEe6QncsbWkl3eg" value="0D0A"/>
-      <attribute defType="com.stambia.file.file.fieldSeparator" id="_b62IQHpQEe6QncsbWkl3eg" value="7C"/>
-      <attribute defType="com.stambia.file.file.stringDelimiter" id="_b62vUHpQEe6QncsbWkl3eg"/>
-      <attribute defType="com.stambia.file.file.decimalSeparator" id="_b639cHpQEe6QncsbWkl3eg" value="2E"/>
-      <attribute defType="com.stambia.file.file.escapeChar" id="_b64kgHpQEe6QncsbWkl3eg"/>
-      <attribute defType="com.stambia.file.file.lineToSkip" id="_b65yoHpQEe6QncsbWkl3eg" value="0"/>
-      <attribute defType="com.stambia.file.file.lastLineToSkip" id="_b66ZsHpQEe6QncsbWkl3eg" value="0"/>
-      <attribute defType="com.stambia.file.file.header" id="_b67n0HpQEe6QncsbWkl3eg" value="0"/>
-      <attribute defType="com.stambia.file.file.physicalName" id="_cwunYHpQEe6QncsbWkl3eg" value="F_CLIENT_20231001.txt"/>
-      <node defType="com.stambia.file.record" id="_hGKWkXpQEe6QncsbWkl3eg">
-        <node defType="com.stambia.file.filter" id="_iOTqYnpQEe6QncsbWkl3eg" name="entete">
-          <attribute defType="com.stambia.file.filter.value" id="_jytcYHpQEe6QncsbWkl3eg" value="000"/>
-          <attribute defType="com.stambia.file.filter.start" id="_j-xicHpQEe6QncsbWkl3eg" value="1"/>
-          <attribute defType="com.stambia.file.filter.length" id="_kWNLAHpQEe6QncsbWkl3eg" value="3"/>
-          <attribute defType="com.stambia.file.filter.operator" id="_mPIbgHpQEe6QncsbWkl3eg" value="Equals"/>
-        </node>
-      </node>
-      <node defType="com.stambia.file.field" id="_fTmz0HpQEe6QncsbWkl3eg" name="F1" position="1">
-        <attribute defType="com.stambia.file.field.size" id="_fTmz0XpQEe6QncsbWkl3eg" value="12"/>
-        <attribute defType="com.stambia.file.field.type" id="_fTna4HpQEe6QncsbWkl3eg" value="Numeric"/>
-        <attribute defType="com.stambia.file.field.physicalName" id="_fTna4XpQEe6QncsbWkl3eg" value="F1"/>
-      </node>
-      <node defType="com.stambia.file.field" id="_fTp3IHpQEe6QncsbWkl3eg" name="F2" position="2">
-        <attribute defType="com.stambia.file.field.size" id="_fTp3IXpQEe6QncsbWkl3eg" value="56"/>
-        <attribute defType="com.stambia.file.field.type" id="_fTp3InpQEe6QncsbWkl3eg" value="String"/>
-        <attribute defType="com.stambia.file.field.physicalName" id="_fTp3I3pQEe6QncsbWkl3eg" value="F2"/>
-      </node>
-      <node defType="com.stambia.file.field" id="_fTp3JHpQEe6QncsbWkl3eg" name="F3" position="3">
-        <attribute defType="com.stambia.file.field.size" id="_fTp3JXpQEe6QncsbWkl3eg" value="59"/>
-        <attribute defType="com.stambia.file.field.type" id="_fTp3JnpQEe6QncsbWkl3eg" value="String"/>
-        <attribute defType="com.stambia.file.field.physicalName" id="_fTp3J3pQEe6QncsbWkl3eg" value="F3"/>
-      </node>
-      <node defType="com.stambia.file.field" id="_fTp3KHpQEe6QncsbWkl3eg" name="F4" position="4">
-        <attribute defType="com.stambia.file.field.size" id="_fTp3KXpQEe6QncsbWkl3eg" value="71"/>
-        <attribute defType="com.stambia.file.field.type" id="_fTp3KnpQEe6QncsbWkl3eg" value="String"/>
-        <attribute defType="com.stambia.file.field.format" id="_fTp3K3pQEe6QncsbWkl3eg" value="yyyy-MM-dd"/>
-        <attribute defType="com.stambia.file.field.physicalName" id="_fTp3LHpQEe6QncsbWkl3eg" value="F4"/>
-      </node>
-      <node defType="com.stambia.file.field" id="_fTp3LXpQEe6QncsbWkl3eg" name="F5" position="5">
-        <attribute defType="com.stambia.file.field.size" id="_fTp3LnpQEe6QncsbWkl3eg" value="54"/>
-        <attribute defType="com.stambia.file.field.type" id="_fTp3L3pQEe6QncsbWkl3eg" value="String"/>
-        <attribute defType="com.stambia.file.field.physicalName" id="_fTp3MHpQEe6QncsbWkl3eg" value="F5"/>
-      </node>
-      <node defType="com.stambia.file.field" id="_fTp3MXpQEe6QncsbWkl3eg" name="F6" position="6">
-        <attribute defType="com.stambia.file.field.size" id="_fTp3MnpQEe6QncsbWkl3eg" value="64"/>
-        <attribute defType="com.stambia.file.field.type" id="_fTp3M3pQEe6QncsbWkl3eg" value="String"/>
-        <attribute defType="com.stambia.file.field.physicalName" id="_fTp3NHpQEe6QncsbWkl3eg" value="F6"/>
-      </node>
-    </node>
-  </node>
   <node defType="com.stambia.file.directory" id="_WWqRgHpREe6QncsbWkl3eg" name="source">
     <attribute defType="com.stambia.file.directory.path" id="_WXn60HpREe6QncsbWkl3eg" value="C:\source"/>
     <node defType="com.stambia.file.file" id="_WXq-IHpREe6QncsbWkl3eg" name="F_CLIENT_20231001">
       <attribute defType="com.stambia.file.file.type" id="_WYYv0HpREe6QncsbWkl3eg" value="DELIMITED"/>
-      <attribute defType="com.stambia.file.file.charsetName" id="_WYZ98HpREe6QncsbWkl3eg"/>
+      <attribute defType="com.stambia.file.file.charsetName" id="_WYZ98HpREe6QncsbWkl3eg" value="UTF-8"/>
       <attribute defType="com.stambia.file.file.lineSeparator" id="_WYalAHpREe6QncsbWkl3eg" value="0D0A"/>
       <attribute defType="com.stambia.file.file.fieldSeparator" id="_WYbMEHpREe6QncsbWkl3eg" value="7C"/>
       <attribute defType="com.stambia.file.file.stringDelimiter" id="_WYbMEXpREe6QncsbWkl3eg"/>
@@ -134,105 +21,315 @@
           <attribute defType="com.stambia.file.filter.length" id="_9OKtoHpREe6QncsbWkl3eg" value="3"/>
           <attribute defType="com.stambia.file.filter.operator" id="_9vG3gHpREe6QncsbWkl3eg" value="Equals"/>
         </node>
-        <node defType="com.stambia.file.field" id="_CuMAo3pSEe6QncsbWkl3eg" name="F3" position="3">
+        <node defType="com.stambia.file.field" id="_CuMAo3pSEe6QncsbWkl3eg" name="VERSION" position="3">
           <attribute defType="com.stambia.file.field.size" id="_CuMApHpSEe6QncsbWkl3eg" value="2"/>
           <attribute defType="com.stambia.file.field.type" id="_CuMApXpSEe6QncsbWkl3eg" value="Numeric"/>
           <attribute defType="com.stambia.file.field.physicalName" id="_CuMApnpSEe6QncsbWkl3eg" value="F3"/>
         </node>
-        <node defType="com.stambia.file.field" id="_CuMArHpSEe6QncsbWkl3eg" name="F5" position="5">
+        <node defType="com.stambia.file.field" id="_CuMArHpSEe6QncsbWkl3eg" name="SOURCE" position="5">
           <attribute defType="com.stambia.file.field.size" id="_CuMArXpSEe6QncsbWkl3eg" value="30"/>
           <attribute defType="com.stambia.file.field.type" id="_CuMArnpSEe6QncsbWkl3eg" value="String"/>
           <attribute defType="com.stambia.file.field.physicalName" id="_CuMAr3pSEe6QncsbWkl3eg" value="F5"/>
         </node>
-        <node defType="com.stambia.file.field" id="_CuMAp3pSEe6QncsbWkl3eg" name="F4" position="4">
+        <node defType="com.stambia.file.field" id="_CuMAp3pSEe6QncsbWkl3eg" name="DATE" position="4">
           <attribute defType="com.stambia.file.field.size" id="_CuMAqHpSEe6QncsbWkl3eg" value="30"/>
           <attribute defType="com.stambia.file.field.type" id="_CuMAqXpSEe6QncsbWkl3eg" value="Date"/>
           <attribute defType="com.stambia.file.field.format" id="_CuMAqnpSEe6QncsbWkl3eg" value="yyyy-MM-dd"/>
           <attribute defType="com.stambia.file.field.physicalName" id="_CuMAq3pSEe6QncsbWkl3eg" value="F4"/>
         </node>
-        <node defType="com.stambia.file.field" id="_CuLZkHpSEe6QncsbWkl3eg" name="F1" position="1">
+        <node defType="com.stambia.file.field" id="_CuLZkHpSEe6QncsbWkl3eg" name="TYPE_LIGNE" position="1">
           <attribute defType="com.stambia.file.field.size" id="_CuLZkXpSEe6QncsbWkl3eg" value="3"/>
-          <attribute defType="com.stambia.file.field.type" id="_CuLZknpSEe6QncsbWkl3eg" value="Numeric"/>
+          <attribute defType="com.stambia.file.field.type" id="_CuLZknpSEe6QncsbWkl3eg" value="String"/>
           <attribute defType="com.stambia.file.field.physicalName" id="_CuLZk3pSEe6QncsbWkl3eg" value="F1"/>
         </node>
-        <node defType="com.stambia.file.field" id="_CuLZlHpSEe6QncsbWkl3eg" name="F2" position="2">
+        <node defType="com.stambia.file.field" id="_CuLZlHpSEe6QncsbWkl3eg" name="TYPE_FICHIER" position="2">
           <attribute defType="com.stambia.file.field.size" id="_CuMAoHpSEe6QncsbWkl3eg" value="20"/>
           <attribute defType="com.stambia.file.field.type" id="_CuMAoXpSEe6QncsbWkl3eg" value="String"/>
           <attribute defType="com.stambia.file.field.physicalName" id="_CuMAonpSEe6QncsbWkl3eg" value="F2"/>
         </node>
-        <node defType="com.stambia.file.field" id="_CuMAsHpSEe6QncsbWkl3eg" name="F6" position="6">
+        <node defType="com.stambia.file.field" id="_CuMAsHpSEe6QncsbWkl3eg" name="SEQUENCE" position="6">
           <attribute defType="com.stambia.file.field.size" id="_CuMAsXpSEe6QncsbWkl3eg" value="6"/>
           <attribute defType="com.stambia.file.field.type" id="_CuMAsnpSEe6QncsbWkl3eg" value="Numeric"/>
           <attribute defType="com.stambia.file.field.physicalName" id="_CuMAs3pSEe6QncsbWkl3eg" value="F6"/>
         </node>
       </node>
-      <node defType="com.stambia.file.field" id="_cItvsHpREe6QncsbWkl3eg" name="F1" position="1">
-        <attribute defType="com.stambia.file.field.size" id="_cItvsXpREe6QncsbWkl3eg" value="12"/>
-        <attribute defType="com.stambia.file.field.type" id="_cItvsnpREe6QncsbWkl3eg" value="Numeric"/>
-        <attribute defType="com.stambia.file.field.physicalName" id="_cItvs3pREe6QncsbWkl3eg" value="F1"/>
-      </node>
-      <node defType="com.stambia.file.field" id="_cItvtHpREe6QncsbWkl3eg" name="F2" position="2">
-        <attribute defType="com.stambia.file.field.size" id="_cItvtXpREe6QncsbWkl3eg" value="56"/>
-        <attribute defType="com.stambia.file.field.type" id="_cItvtnpREe6QncsbWkl3eg" value="String"/>
-        <attribute defType="com.stambia.file.field.physicalName" id="_cItvt3pREe6QncsbWkl3eg" value="F2"/>
-      </node>
-      <node defType="com.stambia.file.field" id="_cItvuHpREe6QncsbWkl3eg" name="F3" position="3">
-        <attribute defType="com.stambia.file.field.size" id="_cItvuXpREe6QncsbWkl3eg" value="59"/>
-        <attribute defType="com.stambia.file.field.type" id="_cItvunpREe6QncsbWkl3eg" value="String"/>
-        <attribute defType="com.stambia.file.field.physicalName" id="_cItvu3pREe6QncsbWkl3eg" value="F3"/>
-      </node>
-      <node defType="com.stambia.file.field" id="_cItvvHpREe6QncsbWkl3eg" name="F4" position="4">
-        <attribute defType="com.stambia.file.field.size" id="_cItvvXpREe6QncsbWkl3eg" value="71"/>
-        <attribute defType="com.stambia.file.field.type" id="_cItvvnpREe6QncsbWkl3eg" value="String"/>
-        <attribute defType="com.stambia.file.field.format" id="_cItvv3pREe6QncsbWkl3eg" value="yyyy-MM-dd"/>
-        <attribute defType="com.stambia.file.field.physicalName" id="_cItvwHpREe6QncsbWkl3eg" value="F4"/>
-      </node>
-      <node defType="com.stambia.file.field" id="_cItvwXpREe6QncsbWkl3eg" name="F5" position="5">
-        <attribute defType="com.stambia.file.field.size" id="_cItvwnpREe6QncsbWkl3eg" value="54"/>
-        <attribute defType="com.stambia.file.field.type" id="_cItvw3pREe6QncsbWkl3eg" value="String"/>
-        <attribute defType="com.stambia.file.field.physicalName" id="_cItvxHpREe6QncsbWkl3eg" value="F5"/>
-      </node>
-      <node defType="com.stambia.file.field" id="_cItvxXpREe6QncsbWkl3eg" name="F6" position="6">
-        <attribute defType="com.stambia.file.field.size" id="_cItvxnpREe6QncsbWkl3eg" value="64"/>
-        <attribute defType="com.stambia.file.field.type" id="_cItvx3pREe6QncsbWkl3eg" value="String"/>
-        <attribute defType="com.stambia.file.field.physicalName" id="_cItvyHpREe6QncsbWkl3eg" value="F6"/>
-      </node>
-      <node defType="com.stambia.file.record" id="_PE4QgHpSEe6QncsbWkl3eg" name="ENTETE_2">
-        <node defType="com.stambia.file.filter" id="_PE4QgXpSEe6QncsbWkl3eg" name="entete">
+      <node defType="com.stambia.file.record" id="_PE4QgHpSEe6QncsbWkl3eg" name="COMPTE">
+        <node defType="com.stambia.file.filter" id="_PE4QgXpSEe6QncsbWkl3eg" name="COMPTE">
           <attribute defType="com.stambia.file.filter.value" id="_PE4QgnpSEe6QncsbWkl3eg" value="100"/>
           <attribute defType="com.stambia.file.filter.start" id="_PE4Qg3pSEe6QncsbWkl3eg" value="1"/>
           <attribute defType="com.stambia.file.filter.length" id="_PE4QhHpSEe6QncsbWkl3eg" value="3"/>
           <attribute defType="com.stambia.file.filter.operator" id="_PE4QhXpSEe6QncsbWkl3eg" value="Equals"/>
         </node>
-        <node defType="com.stambia.file.field" id="_Wqy5AHpSEe6QncsbWkl3eg" name="F1" position="1">
-          <attribute defType="com.stambia.file.field.size" id="_Wqy5AXpSEe6QncsbWkl3eg" value="12"/>
+        <node defType="com.stambia.file.field" id="_Wqy5AHpSEe6QncsbWkl3eg" name="TYPE_LIGNE" position="1">
+          <attribute defType="com.stambia.file.field.size" id="_Wqy5AXpSEe6QncsbWkl3eg" value="3"/>
           <attribute defType="com.stambia.file.field.type" id="_Wqy5AnpSEe6QncsbWkl3eg" value="Numeric"/>
-          <attribute defType="com.stambia.file.field.physicalName" id="_Wqy5A3pSEe6QncsbWkl3eg" value="F1"/>
+          <attribute defType="com.stambia.file.field.physicalName" id="_Wqy5A3pSEe6QncsbWkl3eg" value="TYPE_LIGNE"/>
         </node>
-        <node defType="com.stambia.file.field" id="_Wqy5CHpSEe6QncsbWkl3eg" name="F3" position="3">
-          <attribute defType="com.stambia.file.field.size" id="_Wqy5CXpSEe6QncsbWkl3eg" value="59"/>
+        <node defType="com.stambia.file.field" id="_Wqy5CHpSEe6QncsbWkl3eg" name="CLE_COMPTE" position="3">
+          <attribute defType="com.stambia.file.field.size" id="_Wqy5CXpSEe6QncsbWkl3eg" value="45"/>
           <attribute defType="com.stambia.file.field.type" id="_Wqy5CnpSEe6QncsbWkl3eg" value="String"/>
-          <attribute defType="com.stambia.file.field.physicalName" id="_Wqy5C3pSEe6QncsbWkl3eg" value="F3"/>
+          <attribute defType="com.stambia.file.field.physicalName" id="_Wqy5C3pSEe6QncsbWkl3eg" value="CLE_COMPTE"/>
         </node>
-        <node defType="com.stambia.file.field" id="_Wqy5DHpSEe6QncsbWkl3eg" name="F4" position="4">
-          <attribute defType="com.stambia.file.field.size" id="_Wqy5DXpSEe6QncsbWkl3eg" value="12"/>
+        <node defType="com.stambia.file.field" id="_Wqy5DHpSEe6QncsbWkl3eg" name="STATUS" position="4">
+          <attribute defType="com.stambia.file.field.size" id="_Wqy5DXpSEe6QncsbWkl3eg" value="5"/>
           <attribute defType="com.stambia.file.field.type" id="_Wqy5DnpSEe6QncsbWkl3eg" value="Numeric"/>
-          <attribute defType="com.stambia.file.field.physicalName" id="_Wqy5D3pSEe6QncsbWkl3eg" value="F4"/>
+          <attribute defType="com.stambia.file.field.physicalName" id="_Wqy5D3pSEe6QncsbWkl3eg" value="STATUS"/>
         </node>
-        <node defType="com.stambia.file.field" id="_Wqy5FHpSEe6QncsbWkl3eg" name="F6" position="6">
-          <attribute defType="com.stambia.file.field.size" id="_Wqy5FXpSEe6QncsbWkl3eg" value="12"/>
+        <node defType="com.stambia.file.field" id="_Wqy5FHpSEe6QncsbWkl3eg" name="CABINET" position="6">
+          <attribute defType="com.stambia.file.field.size" id="_Wqy5FXpSEe6QncsbWkl3eg" value="9"/>
           <attribute defType="com.stambia.file.field.type" id="_Wqy5FnpSEe6QncsbWkl3eg" value="Numeric"/>
-          <attribute defType="com.stambia.file.field.physicalName" id="_Wqy5F3pSEe6QncsbWkl3eg" value="F6"/>
+          <attribute defType="com.stambia.file.field.physicalName" id="_Wqy5F3pSEe6QncsbWkl3eg" value="CABINET"/>
         </node>
-        <node defType="com.stambia.file.field" id="_Wqy5BHpSEe6QncsbWkl3eg" name="F2" position="2">
-          <attribute defType="com.stambia.file.field.size" id="_Wqy5BXpSEe6QncsbWkl3eg" value="51"/>
+        <node defType="com.stambia.file.field" id="_Wqy5BHpSEe6QncsbWkl3eg" name="ACTION" position="2">
+          <attribute defType="com.stambia.file.field.size" id="_Wqy5BXpSEe6QncsbWkl3eg" value="1"/>
           <attribute defType="com.stambia.file.field.type" id="_Wqy5BnpSEe6QncsbWkl3eg" value="String"/>
-          <attribute defType="com.stambia.file.field.physicalName" id="_Wqy5B3pSEe6QncsbWkl3eg" value="F2"/>
+          <attribute defType="com.stambia.file.field.physicalName" id="_Wqy5B3pSEe6QncsbWkl3eg" value="ACTION"/>
         </node>
-        <node defType="com.stambia.file.field" id="_Wqy5EHpSEe6QncsbWkl3eg" name="F5" position="5">
-          <attribute defType="com.stambia.file.field.size" id="_Wqy5EXpSEe6QncsbWkl3eg" value="12"/>
+        <node defType="com.stambia.file.field" id="_Wqy5EHpSEe6QncsbWkl3eg" name="TYPE" position="5">
+          <attribute defType="com.stambia.file.field.size" id="_Wqy5EXpSEe6QncsbWkl3eg" value="5"/>
           <attribute defType="com.stambia.file.field.type" id="_Wqy5EnpSEe6QncsbWkl3eg" value="Numeric"/>
-          <attribute defType="com.stambia.file.field.physicalName" id="_Wqy5E3pSEe6QncsbWkl3eg" value="F5"/>
+          <attribute defType="com.stambia.file.field.physicalName" id="_Wqy5E3pSEe6QncsbWkl3eg" value="TYPE"/>
+        </node>
+        <node defType="com.stambia.file.record" id="_uvITkXqFEe6F_fnQESD-eA" name="CLIENT">
+          <node defType="com.stambia.file.filter" id="_xZ_-YnqFEe6F_fnQESD-eA" name="client">
+            <attribute defType="com.stambia.file.filter.value" id="_2uxDoHqFEe6F_fnQESD-eA" value="200"/>
+            <attribute defType="com.stambia.file.filter.start" id="_3GKP8HqFEe6F_fnQESD-eA" value="1"/>
+            <attribute defType="com.stambia.file.filter.length" id="_3hVJAHqFEe6F_fnQESD-eA" value="3"/>
+            <attribute defType="com.stambia.file.filter.operator" id="_4BEZAHqFEe6F_fnQESD-eA" value="Equals"/>
+          </node>
+          <node defType="com.stambia.file.field" id="_5aYVcHqFEe6F_fnQESD-eA" name="DATE_ANNIVERSAIRE" position="10">
+            <attribute defType="com.stambia.file.field.size" id="_5aYVcXqFEe6F_fnQESD-eA" value="10"/>
+            <attribute defType="com.stambia.file.field.type" id="_5aYVcnqFEe6F_fnQESD-eA" value="Numeric"/>
+            <attribute defType="com.stambia.file.field.physicalName" id="_5aYVc3qFEe6F_fnQESD-eA" value="F10"/>
+          </node>
+          <node defType="com.stambia.file.field" id="_5aYVbHqFEe6F_fnQESD-eA" name="NOM" position="9">
+            <attribute defType="com.stambia.file.field.size" id="_5aYVbXqFEe6F_fnQESD-eA" value="255"/>
+            <attribute defType="com.stambia.file.field.type" id="_5aYVbnqFEe6F_fnQESD-eA" value="String"/>
+            <attribute defType="com.stambia.file.field.physicalName" id="_5aYVb3qFEe6F_fnQESD-eA" value="F9"/>
+          </node>
+          <node defType="com.stambia.file.field" id="_5aYVVHqFEe6F_fnQESD-eA" name="CLE_CLIENT" position="3">
+            <attribute defType="com.stambia.file.field.size" id="_5aYVVXqFEe6F_fnQESD-eA" value="45"/>
+            <attribute defType="com.stambia.file.field.type" id="_5aYVVnqFEe6F_fnQESD-eA" value="String"/>
+            <attribute defType="com.stambia.file.field.physicalName" id="_5aYVV3qFEe6F_fnQESD-eA" value="F3"/>
+          </node>
+          <node defType="com.stambia.file.field" id="_5aTc0HqFEe6F_fnQESD-eA" name="TYPE_LIGNE" position="1">
+            <attribute defType="com.stambia.file.field.size" id="_5aTc0XqFEe6F_fnQESD-eA" value="3"/>
+            <attribute defType="com.stambia.file.field.type" id="_5aTc0nqFEe6F_fnQESD-eA" value="String"/>
+            <attribute defType="com.stambia.file.field.physicalName" id="_5aTc03qFEe6F_fnQESD-eA" value="F1"/>
+          </node>
+          <node defType="com.stambia.file.field" id="_5aYVeHqFEe6F_fnQESD-eA" name="MUTUELLE" position="12">
+            <attribute defType="com.stambia.file.field.size" id="_5aYVeXqFEe6F_fnQESD-eA" value="5"/>
+            <attribute defType="com.stambia.file.field.type" id="_5aYVenqFEe6F_fnQESD-eA" value="Numeric"/>
+            <attribute defType="com.stambia.file.field.physicalName" id="_5aYVe3qFEe6F_fnQESD-eA" value="F12"/>
+          </node>
+          <node defType="com.stambia.file.field" id="_5aYVWHqFEe6F_fnQESD-eA" name="CLE_COMPTE" position="4">
+            <attribute defType="com.stambia.file.field.size" id="_5aYVWXqFEe6F_fnQESD-eA" value="45"/>
+            <attribute defType="com.stambia.file.field.type" id="_5aYVWnqFEe6F_fnQESD-eA" value="String"/>
+            <attribute defType="com.stambia.file.field.physicalName" id="_5aYVW3qFEe6F_fnQESD-eA" value="F4"/>
+          </node>
+          <node defType="com.stambia.file.field" id="_5aYVZHqFEe6F_fnQESD-eA" name="CIVILITE" position="7">
+            <attribute defType="com.stambia.file.field.size" id="_5aYVZXqFEe6F_fnQESD-eA" value="5"/>
+            <attribute defType="com.stambia.file.field.type" id="_5aYVZnqFEe6F_fnQESD-eA" value="Numeric"/>
+            <attribute defType="com.stambia.file.field.physicalName" id="_5aYVZ3qFEe6F_fnQESD-eA" value="F7"/>
+          </node>
+          <node defType="com.stambia.file.field" id="_5aYVUHqFEe6F_fnQESD-eA" name="ACTION" position="2">
+            <attribute defType="com.stambia.file.field.size" id="_5aYVUXqFEe6F_fnQESD-eA" value="1"/>
+            <attribute defType="com.stambia.file.field.type" id="_5aYVUnqFEe6F_fnQESD-eA" value="String"/>
+            <attribute defType="com.stambia.file.field.physicalName" id="_5aYVU3qFEe6F_fnQESD-eA" value="F2"/>
+          </node>
+          <node defType="com.stambia.file.field" id="_5aYVYHqFEe6F_fnQESD-eA" name="TYPE" position="6">
+            <attribute defType="com.stambia.file.field.size" id="_5aYVYXqFEe6F_fnQESD-eA" value="5"/>
+            <attribute defType="com.stambia.file.field.type" id="_5aYVYnqFEe6F_fnQESD-eA" value="Numeric"/>
+            <attribute defType="com.stambia.file.field.physicalName" id="_5aYVY3qFEe6F_fnQESD-eA" value="F6"/>
+          </node>
+          <node defType="com.stambia.file.field" id="_5aYVXHqFEe6F_fnQESD-eA" name="STATUS" position="5">
+            <attribute defType="com.stambia.file.field.size" id="_5aYVXXqFEe6F_fnQESD-eA" value="5"/>
+            <attribute defType="com.stambia.file.field.type" id="_5aYVXnqFEe6F_fnQESD-eA" value="Numeric"/>
+            <attribute defType="com.stambia.file.field.physicalName" id="_5aYVX3qFEe6F_fnQESD-eA" value="F5"/>
+          </node>
+          <node defType="com.stambia.file.field" id="_5aYVaHqFEe6F_fnQESD-eA" name="PRENOM" position="8">
+            <attribute defType="com.stambia.file.field.size" id="_5aYVaXqFEe6F_fnQESD-eA" value="255"/>
+            <attribute defType="com.stambia.file.field.type" id="_5aYVanqFEe6F_fnQESD-eA" value="String"/>
+            <attribute defType="com.stambia.file.field.physicalName" id="_5aYVa3qFEe6F_fnQESD-eA" value="F8"/>
+          </node>
+          <node defType="com.stambia.file.field" id="_5aYVdHqFEe6F_fnQESD-eA" name="SEXE" position="11">
+            <attribute defType="com.stambia.file.field.size" id="_5aYVdXqFEe6F_fnQESD-eA" value="5"/>
+            <attribute defType="com.stambia.file.field.type" id="_5aYVdnqFEe6F_fnQESD-eA" value="Numeric"/>
+            <attribute defType="com.stambia.file.field.physicalName" id="_5aYVd3qFEe6F_fnQESD-eA" value="F11"/>
+          </node>
+          <node defType="com.stambia.file.record" id="_gWvbsXyIEe6F_fnQESD-eA" name="EMAIL_CLIENT">
+            <node defType="com.stambia.file.filter" id="_of8XcnyIEe6F_fnQESD-eA" name="email">
+              <attribute defType="com.stambia.file.filter.value" id="_ruc60HyIEe6F_fnQESD-eA" value="203"/>
+              <attribute defType="com.stambia.file.filter.start" id="_r7LvQHyIEe6F_fnQESD-eA" value="1"/>
+              <attribute defType="com.stambia.file.filter.length" id="_sYOQkHyIEe6F_fnQESD-eA" value="3"/>
+              <attribute defType="com.stambia.file.filter.operator" id="_s19VcHyIEe6F_fnQESD-eA" value="Equals"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_1p0XxHyIEe6F_fnQESD-eA" name="CLE_CLIENT" position="3">
+              <attribute defType="com.stambia.file.field.size" id="_1p0XxXyIEe6F_fnQESD-eA" value="45"/>
+              <attribute defType="com.stambia.file.field.type" id="_1p0XxnyIEe6F_fnQESD-eA" value="String"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_1p0Xx3yIEe6F_fnQESD-eA" value="CLE_CLIENT"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_1p0XzHyIEe6F_fnQESD-eA" name="STATUS" position="5">
+              <attribute defType="com.stambia.file.field.size" id="_1p0XzXyIEe6F_fnQESD-eA" value="5"/>
+              <attribute defType="com.stambia.file.field.type" id="_1p0XznyIEe6F_fnQESD-eA" value="Numeric"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_1p0Xz3yIEe6F_fnQESD-eA" value="STATUS"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_1pzwsHyIEe6F_fnQESD-eA" name="TYPE_LIGNE" position="1">
+              <attribute defType="com.stambia.file.field.size" id="_1pzwsXyIEe6F_fnQESD-eA" value="3"/>
+              <attribute defType="com.stambia.file.field.type" id="_1pzwsnyIEe6F_fnQESD-eA" value="String"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_1pzws3yIEe6F_fnQESD-eA" value="TYPE_LIGNE"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_1p0XwHyIEe6F_fnQESD-eA" name="ACTION" position="2">
+              <attribute defType="com.stambia.file.field.size" id="_1p0XwXyIEe6F_fnQESD-eA" value="1"/>
+              <attribute defType="com.stambia.file.field.type" id="_1p0XwnyIEe6F_fnQESD-eA" value="String"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_1p0Xw3yIEe6F_fnQESD-eA" value="ACTION"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_1p0XyHyIEe6F_fnQESD-eA" name="EMAIL" position="4">
+              <attribute defType="com.stambia.file.field.size" id="_1p0XyXyIEe6F_fnQESD-eA" value="255"/>
+              <attribute defType="com.stambia.file.field.type" id="_1p0XynyIEe6F_fnQESD-eA" value="String"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_1p0Xy3yIEe6F_fnQESD-eA" value="EMAIL"/>
+            </node>
+            <node defType="com.stambia.file.propertyField" id="_moCDtHzBEe6F_fnQESD-eA" name="fichier_parent">
+              <attribute defType="com.stambia.file.propertyField.property" id="_np3UIHzBEe6F_fnQESD-eA" value="file_name"/>
+            </node>
+          </node>
+          <node defType="com.stambia.file.record" id="_IRa2IXy3Ee6F_fnQESD-eA" name="ADRESSE">
+            <node defType="com.stambia.file.filter" id="_Lw_7Yny3Ee6F_fnQESD-eA" name="adresse">
+              <attribute defType="com.stambia.file.filter.value" id="_ZN3wMHy3Ee6F_fnQESD-eA" value="204"/>
+              <attribute defType="com.stambia.file.filter.start" id="_Ze0WQHy3Ee6F_fnQESD-eA" value="1"/>
+              <attribute defType="com.stambia.file.filter.length" id="_Z4NGoHy3Ee6F_fnQESD-eA" value="3"/>
+              <attribute defType="com.stambia.file.filter.operator" id="_aLG0gHy3Ee6F_fnQESD-eA" value="Equals"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_hlSHNHy3Ee6F_fnQESD-eA" name="VILLE" position="10">
+              <attribute defType="com.stambia.file.field.size" id="_hlSHNXy3Ee6F_fnQESD-eA" value="50"/>
+              <attribute defType="com.stambia.file.field.type" id="_hlSHNny3Ee6F_fnQESD-eA" value="String"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_hlSHN3y3Ee6F_fnQESD-eA" value="F10"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_hlSHFHy3Ee6F_fnQESD-eA" name="ACTION" position="2">
+              <attribute defType="com.stambia.file.field.size" id="_hlSHFXy3Ee6F_fnQESD-eA" value="1"/>
+              <attribute defType="com.stambia.file.field.type" id="_hlSHFny3Ee6F_fnQESD-eA" value="String"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_hlSHF3y3Ee6F_fnQESD-eA" value="F2"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_hlSHJHy3Ee6F_fnQESD-eA" name="LIGNE_2" position="6">
+              <attribute defType="com.stambia.file.field.size" id="_hlSHJXy3Ee6F_fnQESD-eA" value="255"/>
+              <attribute defType="com.stambia.file.field.type" id="_hlSHJny3Ee6F_fnQESD-eA" value="String"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_hlSHJ3y3Ee6F_fnQESD-eA" value="F6"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_hlSHHHy3Ee6F_fnQESD-eA" name="STATUS" position="4">
+              <attribute defType="com.stambia.file.field.size" id="_hlSHHXy3Ee6F_fnQESD-eA" value="5"/>
+              <attribute defType="com.stambia.file.field.type" id="_hlSHHny3Ee6F_fnQESD-eA" value="Numeric"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_hlSHH3y3Ee6F_fnQESD-eA" value="F4"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_hlSHIHy3Ee6F_fnQESD-eA" name="LIGNE_1" position="5">
+              <attribute defType="com.stambia.file.field.size" id="_hlSHIXy3Ee6F_fnQESD-eA" value="255"/>
+              <attribute defType="com.stambia.file.field.type" id="_hlSHIny3Ee6F_fnQESD-eA" value="String"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_hlSHI3y3Ee6F_fnQESD-eA" value="F5"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_hlSHLHy3Ee6F_fnQESD-eA" name="LIGNE_4" position="8">
+              <attribute defType="com.stambia.file.field.size" id="_hlSHLXy3Ee6F_fnQESD-eA" value="255"/>
+              <attribute defType="com.stambia.file.field.type" id="_hlSHLny3Ee6F_fnQESD-eA" value="String"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_hlSHL3y3Ee6F_fnQESD-eA" value="F8"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_hlSHGHy3Ee6F_fnQESD-eA" name="CLIENT" position="3">
+              <attribute defType="com.stambia.file.field.size" id="_hlSHGXy3Ee6F_fnQESD-eA" value="45"/>
+              <attribute defType="com.stambia.file.field.type" id="_hlSHGny3Ee6F_fnQESD-eA" value="String"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_hlSHG3y3Ee6F_fnQESD-eA" value="F3"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_hlSHMHy3Ee6F_fnQESD-eA" name="LIGNE_5" position="9">
+              <attribute defType="com.stambia.file.field.size" id="_hlSHMXy3Ee6F_fnQESD-eA" value="255"/>
+              <attribute defType="com.stambia.file.field.type" id="_hlSHMny3Ee6F_fnQESD-eA" value="String"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_hlSHM3y3Ee6F_fnQESD-eA" value="F9"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_hlSHQHy3Ee6F_fnQESD-eA" name="QUALITE" position="13">
+              <attribute defType="com.stambia.file.field.size" id="_hlSHQXy3Ee6F_fnQESD-eA" value="1"/>
+              <attribute defType="com.stambia.file.field.type" id="_hlSHQny3Ee6F_fnQESD-eA" value="Numeric"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_hlSHQ3y3Ee6F_fnQESD-eA" value="F13"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_hlSHKHy3Ee6F_fnQESD-eA" name="LIGNE_3" position="7">
+              <attribute defType="com.stambia.file.field.size" id="_hlSHKXy3Ee6F_fnQESD-eA" value="255"/>
+              <attribute defType="com.stambia.file.field.type" id="_hlSHKny3Ee6F_fnQESD-eA" value="String"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_hlSHK3y3Ee6F_fnQESD-eA" value="F7"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_hlSHOHy3Ee6F_fnQESD-eA" name="CODE_POSTAL" position="11">
+              <attribute defType="com.stambia.file.field.size" id="_hlSHOXy3Ee6F_fnQESD-eA" value="10"/>
+              <attribute defType="com.stambia.file.field.type" id="_hlSHOny3Ee6F_fnQESD-eA" value="String"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_hlSHO3y3Ee6F_fnQESD-eA" value="F11"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_hlSHPHy3Ee6F_fnQESD-eA" name="PAYS" position="12">
+              <attribute defType="com.stambia.file.field.size" id="_hlSHPXy3Ee6F_fnQESD-eA" value="5"/>
+              <attribute defType="com.stambia.file.field.type" id="_hlSHPny3Ee6F_fnQESD-eA" value="Numeric"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_hlSHP3y3Ee6F_fnQESD-eA" value="F12"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_hlSHEHy3Ee6F_fnQESD-eA" name="TYPE_LIGNE" position="1">
+              <attribute defType="com.stambia.file.field.size" id="_hlSHEXy3Ee6F_fnQESD-eA" value="3"/>
+              <attribute defType="com.stambia.file.field.type" id="_hlSHEny3Ee6F_fnQESD-eA" value="Numeric"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_hlSHE3y3Ee6F_fnQESD-eA" value="F1"/>
+            </node>
+          </node>
+          <node defType="com.stambia.file.record" id="_NhTUAXy6Ee6F_fnQESD-eA" name="TELEPHONE">
+            <node defType="com.stambia.file.filter" id="_OJqUgny6Ee6F_fnQESD-eA" name="telephone">
+              <attribute defType="com.stambia.file.filter.value" id="_9TOGYHy6Ee6F_fnQESD-eA" value="205"/>
+              <attribute defType="com.stambia.file.filter.start" id="_9jev8Hy6Ee6F_fnQESD-eA" value="1"/>
+              <attribute defType="com.stambia.file.filter.length" id="_-B2uAHy6Ee6F_fnQESD-eA" value="3"/>
+              <attribute defType="com.stambia.file.filter.operator" id="_-Yba8Hy6Ee6F_fnQESD-eA" value="Equals"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_IQ1qlHy7Ee6F_fnQESD-eA" name="FAVORI" position="6">
+              <attribute defType="com.stambia.file.field.size" id="_IQ1qlXy7Ee6F_fnQESD-eA" value="5"/>
+              <attribute defType="com.stambia.file.field.type" id="_IQ1qlny7Ee6F_fnQESD-eA" value="Numeric"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_IQ1ql3y7Ee6F_fnQESD-eA" value="F6"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_IQ1qjHy7Ee6F_fnQESD-eA" name="PHONE" position="4">
+              <attribute defType="com.stambia.file.field.size" id="_IQ1qjXy7Ee6F_fnQESD-eA" value="45"/>
+              <attribute defType="com.stambia.file.field.type" id="_IQ1qjny7Ee6F_fnQESD-eA" value="String"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_IQ1qj3y7Ee6F_fnQESD-eA" value="F4"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_IQ1qkHy7Ee6F_fnQESD-eA" name="STATUS" position="5">
+              <attribute defType="com.stambia.file.field.size" id="_IQ1qkXy7Ee6F_fnQESD-eA" value="5"/>
+              <attribute defType="com.stambia.file.field.type" id="_IQ1qkny7Ee6F_fnQESD-eA" value="Numeric"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_IQ1qk3y7Ee6F_fnQESD-eA" value="F5"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_IQ1qiHy7Ee6F_fnQESD-eA" name="CLE_CLIENT" position="3">
+              <attribute defType="com.stambia.file.field.size" id="_IQ1qiXy7Ee6F_fnQESD-eA" value="45"/>
+              <attribute defType="com.stambia.file.field.type" id="_IQ1qiny7Ee6F_fnQESD-eA" value="String"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_IQ1qi3y7Ee6F_fnQESD-eA" value="F3"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_IQ1qmHy7Ee6F_fnQESD-eA" name="TYPE" position="7">
+              <attribute defType="com.stambia.file.field.size" id="_IQ1qmXy7Ee6F_fnQESD-eA" value="5"/>
+              <attribute defType="com.stambia.file.field.type" id="_IQ1qmny7Ee6F_fnQESD-eA" value="Numeric"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_IQ1qm3y7Ee6F_fnQESD-eA" value="F7"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_IQ1qgHy7Ee6F_fnQESD-eA" name="TYPE_LIGNE " position="1">
+              <attribute defType="com.stambia.file.field.size" id="_IQ1qgXy7Ee6F_fnQESD-eA" value="3"/>
+              <attribute defType="com.stambia.file.field.type" id="_IQ1qgny7Ee6F_fnQESD-eA" value="Numeric"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_IQ1qg3y7Ee6F_fnQESD-eA" value="F1"/>
+            </node>
+            <node defType="com.stambia.file.field" id="_IQ1qhHy7Ee6F_fnQESD-eA" name="ACTION" position="2">
+              <attribute defType="com.stambia.file.field.size" id="_IQ1qhXy7Ee6F_fnQESD-eA" value="1"/>
+              <attribute defType="com.stambia.file.field.type" id="_IQ1qhny7Ee6F_fnQESD-eA" value="String"/>
+              <attribute defType="com.stambia.file.field.physicalName" id="_IQ1qh3y7Ee6F_fnQESD-eA" value="F2"/>
+            </node>
+          </node>
+        </node>
+        <node defType="com.stambia.file.propertyField" id="_dxeStHzBEe6F_fnQESD-eA" name="fichier_parent">
+          <attribute defType="com.stambia.file.propertyField.property" id="_jURM4HzBEe6F_fnQESD-eA" value="file_parent_name"/>
+        </node>
+      </node>
+      <node defType="com.stambia.file.record" id="_jQxbsXy7Ee6F_fnQESD-eA" name="PIED">
+        <node defType="com.stambia.file.filter" id="_lcg6gny7Ee6F_fnQESD-eA" name="pied">
+          <attribute defType="com.stambia.file.filter.value" id="_mcg-8Hy7Ee6F_fnQESD-eA" value="999"/>
+          <attribute defType="com.stambia.file.filter.start" id="_nIi-gHy7Ee6F_fnQESD-eA" value="1"/>
+          <attribute defType="com.stambia.file.filter.length" id="_nm1dAHy7Ee6F_fnQESD-eA" value="3"/>
+          <attribute defType="com.stambia.file.filter.operator" id="_oAAK8Hy7Ee6F_fnQESD-eA" value="Equals"/>
+        </node>
+        <node defType="com.stambia.file.field" id="_qzN5dHy7Ee6F_fnQESD-eA" name="NB_LIGNE" position="2">
+          <attribute defType="com.stambia.file.field.size" id="_qzN5dXy7Ee6F_fnQESD-eA" value="10"/>
+          <attribute defType="com.stambia.file.field.type" id="_qzN5dny7Ee6F_fnQESD-eA" value="Numeric"/>
+          <attribute defType="com.stambia.file.field.physicalName" id="_qzN5d3y7Ee6F_fnQESD-eA" value="F2"/>
+        </node>
+        <node defType="com.stambia.file.field" id="_qzN5cHy7Ee6F_fnQESD-eA" name="TYPE_LIGNE" position="1">
+          <attribute defType="com.stambia.file.field.size" id="_qzN5cXy7Ee6F_fnQESD-eA" value="3"/>
+          <attribute defType="com.stambia.file.field.type" id="_qzN5cny7Ee6F_fnQESD-eA" value="String"/>
+          <attribute defType="com.stambia.file.field.physicalName" id="_qzN5c3y7Ee6F_fnQESD-eA" value="F1"/>
         </node>
       </node>
     </node>
