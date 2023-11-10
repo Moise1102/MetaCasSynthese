@@ -344,7 +344,7 @@
       <attribute defType="com.stambia.file.file.lineToSkip" id="_lN_SKHpREe6QncsbWkl3eg" value="0"/>
       <attribute defType="com.stambia.file.file.lastLineToSkip" id="_lN_SKXpREe6QncsbWkl3eg" value="0"/>
       <attribute defType="com.stambia.file.file.header" id="_lN_SKnpREe6QncsbWkl3eg" value="0"/>
-      <attribute defType="com.stambia.file.file.physicalName" id="_lN_SK3pREe6QncsbWkl3eg" value="F_CLIENT_20231001.txt"/>
+      <attribute defType="com.stambia.file.file.physicalName" id="_lN_SK3pREe6QncsbWkl3eg" value="F_CLIENT_4.txt"/>
       <node defType="com.stambia.file.field" id="_lN_SLHpREe6QncsbWkl3eg" name="F4" position="4">
         <attribute defType="com.stambia.file.field.size" id="_lN_SLXpREe6QncsbWkl3eg" value="71"/>
         <attribute defType="com.stambia.file.field.type" id="_lN_SLnpREe6QncsbWkl3eg" value="String"/>
