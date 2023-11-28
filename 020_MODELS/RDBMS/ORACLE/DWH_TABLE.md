@@ -13,9 +13,9 @@
     <node defType="com.stambia.rdbms.column" id="_5xQwUIVyEe6_ZKlljuliUA" name="TYPE" position="2">
       <attribute defType="com.stambia.rdbms.column.name" id="_5xQwUYVyEe6_ZKlljuliUA" value="TYPE"/>
       <attribute defType="com.stambia.rdbms.column.nullable" id="_5xQwUoVyEe6_ZKlljuliUA" value="0"/>
-      <attribute defType="com.stambia.rdbms.column.charByte" id="_5xQwU4VyEe6_ZKlljuliUA" value="CHAR"/>
+      <attribute defType="com.stambia.rdbms.column.charByte" id="_5xQwU4VyEe6_ZKlljuliUA" value="BYTE"/>
       <attribute defType="com.stambia.rdbms.column.type" id="_5xQwVIVyEe6_ZKlljuliUA" value="VARCHAR2"/>
-      <attribute defType="com.stambia.rdbms.column.size" id="_5xQwVYVyEe6_ZKlljuliUA" value="5"/>
+      <attribute defType="com.stambia.rdbms.column.size" id="_5xQwVYVyEe6_ZKlljuliUA" value="15"/>
     </node>
     <node defType="com.stambia.rdbms.column" id="_5xR-cIVyEe6_ZKlljuliUA" name="PHONE" position="3">
       <attribute defType="com.stambia.rdbms.column.name" id="_5xR-cYVyEe6_ZKlljuliUA" value="PHONE"/>
@@ -69,6 +69,22 @@
       <node defType="com.stambia.rdbms.colref" id="_5xidI4VyEe6_ZKlljuliUA" position="2">
         <attribute defType="com.stambia.rdbms.colref.ref" id="_5xidJIVyEe6_ZKlljuliUA" ref="resource.md#_5xQwUIVyEe6_ZKlljuliUA?fileId=_yVv6wIPiEe6_ZKlljuliUA$type=md$name=TYPE?"/>
       </node>
+    </node>
+    <node defType="com.stambia.rdbms.fk" id="_5afSIIlvEe6eVfFnYwgOWA" name="FK_TELEPHONE_CLIENT">
+      <node defType="com.stambia.rdbms.relation" id="_5afSIYlvEe6eVfFnYwgOWA" position="1">
+        <attribute defType="com.stambia.rdbms.relation.fk" id="_5afSIolvEe6eVfFnYwgOWA" ref="resource.md#_5xQJQIVyEe6_ZKlljuliUA?fileId=_yVv6wIPiEe6_ZKlljuliUA$type=md$name=ID_CLIENT?"/>
+        <attribute defType="com.stambia.rdbms.relation.pk" id="_5afSI4lvEe6eVfFnYwgOWA" ref="resource.md#_5pfUYIVyEe6_ZKlljuliUA?fileId=_yVv6wIPiEe6_ZKlljuliUA$type=md$name=ID_CLIENT?"/>
+      </node>
+    </node>
+    <node defType="com.stambia.rdbms.check" id="_nLXZ0YlwEe6eVfFnYwgOWA" name="CK_PHONE_CLIENT">
+      <attribute defType="com.stambia.rdbms.check.rejectCode" id="_taX5wIlwEe6eVfFnYwgOWA" value="PHN001"/>
+      <attribute defType="com.stambia.rdbms.check.userMessage" id="_vTzgkIlwEe6eVfFnYwgOWA" value="Telephone pas associé à un client "/>
+      <attribute defType="com.stambia.rdbms.check.sql" id="_JGv6MIlxEe6eVfFnYwgOWA" value="DWH_TELEPHONE.ID_CLIENT is not null"/>
+    </node>
+    <node defType="com.stambia.rdbms.check" id="_KmQlIYlxEe6eVfFnYwgOWA" name="CK_PHONE_VALID ">
+      <attribute defType="com.stambia.rdbms.check.userMessage" id="_XwkqUIlxEe6eVfFnYwgOWA" value="Numero de telephone pas valide "/>
+      <attribute defType="com.stambia.rdbms.check.rejectCode" id="_ZBDawIlxEe6eVfFnYwgOWA" value="PHN002"/>
+      <attribute defType="com.stambia.rdbms.check.sql" id="_vmXlUIlyEe6eVfFnYwgOWA" value="REGEXP_LIKE(DWH_TELEPHONE.PHONE, '^[0-9]{2}\.[0-9]{2}\.[0-9]{2}\.[0-9]{2}\.[0-9]{2}$')"/>
     </node>
   </node>
   <node defType="com.stambia.rdbms.datastore" id="_4LSRAYVyEe6_ZKlljuliUA" name="DWH_COMPTE">
@@ -137,6 +153,10 @@
         <attribute defType="com.stambia.rdbms.colref.ref" id="_5RNXQIVyEe6_ZKlljuliUA" ref="resource.md#_5Cu2YIVyEe6_ZKlljuliUA?fileId=_yVv6wIPiEe6_ZKlljuliUA$type=md$name=ID_COMPTE?"/>
       </node>
     </node>
+    <node defType="com.stambia.rdbms.check" id="_b4wvEYluEe6eVfFnYwgOWA" name="CK_CABINET">
+      <attribute defType="com.stambia.rdbms.check.rejectCode" id="_kw9e0IluEe6eVfFnYwgOWA" value="CPT001"/>
+      <attribute defType="com.stambia.rdbms.check.sql" id="_rWlH8IluEe6eVfFnYwgOWA" value="DWH_COMPTE.CABINET is not null"/>
+    </node>
   </node>
   <node defType="com.stambia.rdbms.datastore" id="_5idfUIVyEe6_ZKlljuliUA" name="DWH_CLIENT">
     <attribute defType="com.stambia.rdbms.datastore.name" id="_5ieGYIVyEe6_ZKlljuliUA" value="DWH_CLIENT"/>
@@ -170,17 +190,17 @@
     <node defType="com.stambia.rdbms.column" id="_5phwoIVyEe6_ZKlljuliUA" name="TYPE" position="5">
       <attribute defType="com.stambia.rdbms.column.name" id="_5phwoYVyEe6_ZKlljuliUA" value="TYPE"/>
       <attribute defType="com.stambia.rdbms.column.nullable" id="_5phwooVyEe6_ZKlljuliUA" value="0"/>
-      <attribute defType="com.stambia.rdbms.column.charByte" id="_5phwo4VyEe6_ZKlljuliUA" value="CHAR"/>
+      <attribute defType="com.stambia.rdbms.column.charByte" id="_5phwo4VyEe6_ZKlljuliUA" value="BYTE"/>
       <attribute defType="com.stambia.rdbms.column.type" id="_5phwpIVyEe6_ZKlljuliUA" value="VARCHAR2"/>
-      <attribute defType="com.stambia.rdbms.column.size" id="_5phwpYVyEe6_ZKlljuliUA" value="5"/>
+      <attribute defType="com.stambia.rdbms.column.size" id="_5phwpYVyEe6_ZKlljuliUA" value="255"/>
     </node>
     <node defType="com.stambia.rdbms.column" id="_5piXsIVyEe6_ZKlljuliUA" name="CIVILITE" position="6">
       <attribute defType="com.stambia.rdbms.column.name" id="_5piXsYVyEe6_ZKlljuliUA" value="CIVILITE"/>
       <attribute defType="com.stambia.rdbms.column.nullable" id="_5piXsoVyEe6_ZKlljuliUA" value="1"/>
       <attribute defType="com.stambia.rdbms.column.digits" id="_5piXs4VyEe6_ZKlljuliUA" value="0"/>
       <attribute defType="com.stambia.rdbms.column.charByte" id="_5piXtIVyEe6_ZKlljuliUA" value="BYTE"/>
-      <attribute defType="com.stambia.rdbms.column.type" id="_5piXtYVyEe6_ZKlljuliUA" value="NUMBER"/>
-      <attribute defType="com.stambia.rdbms.column.size" id="_5piXtoVyEe6_ZKlljuliUA" value="5"/>
+      <attribute defType="com.stambia.rdbms.column.type" id="_5piXtYVyEe6_ZKlljuliUA" value="VARCHAR2"/>
+      <attribute defType="com.stambia.rdbms.column.size" id="_5piXtoVyEe6_ZKlljuliUA" value="255"/>
     </node>
     <node defType="com.stambia.rdbms.column" id="_5pi-wIVyEe6_ZKlljuliUA" name="PRENOM" position="7">
       <attribute defType="com.stambia.rdbms.column.name" id="_5pi-wYVyEe6_ZKlljuliUA" value="PRENOM"/>
@@ -206,9 +226,9 @@
     <node defType="com.stambia.rdbms.column" id="_5pkz8IVyEe6_ZKlljuliUA" name="SEXE" position="10">
       <attribute defType="com.stambia.rdbms.column.name" id="_5pkz8YVyEe6_ZKlljuliUA" value="SEXE"/>
       <attribute defType="com.stambia.rdbms.column.nullable" id="_5pkz8oVyEe6_ZKlljuliUA" value="1"/>
-      <attribute defType="com.stambia.rdbms.column.charByte" id="_5pkz84VyEe6_ZKlljuliUA" value="CHAR"/>
+      <attribute defType="com.stambia.rdbms.column.charByte" id="_5pkz84VyEe6_ZKlljuliUA" value="BYTE"/>
       <attribute defType="com.stambia.rdbms.column.type" id="_5pkz9IVyEe6_ZKlljuliUA" value="VARCHAR2"/>
-      <attribute defType="com.stambia.rdbms.column.size" id="_5pkz9YVyEe6_ZKlljuliUA" value="5"/>
+      <attribute defType="com.stambia.rdbms.column.size" id="_5pkz9YVyEe6_ZKlljuliUA" value="255"/>
     </node>
     <node defType="com.stambia.rdbms.column" id="_5plbAIVyEe6_ZKlljuliUA" name="MUTUELLE" position="11">
       <attribute defType="com.stambia.rdbms.column.name" id="_5plbAYVyEe6_ZKlljuliUA" value="MUTUELLE"/>
@@ -251,6 +271,12 @@
         <attribute defType="com.stambia.rdbms.relation.fk" id="_6PXBkoVyEe6_ZKlljuliUA" ref="resource.md#_5pf7cIVyEe6_ZKlljuliUA?fileId=_yVv6wIPiEe6_ZKlljuliUA$type=md$name=ID_COMPTE?"/>
         <attribute defType="com.stambia.rdbms.relation.pk" id="_6PXBk4VyEe6_ZKlljuliUA" ref="resource.md#_5Cu2YIVyEe6_ZKlljuliUA?fileId=_yVv6wIPiEe6_ZKlljuliUA$type=md$name=ID_COMPTE?"/>
       </node>
+    </node>
+    <node defType="com.stambia.rdbms.check" id="_1H7HAYbNEe6hMcZPwGwPvA" name="CK_CLIENT_COMPTE">
+      <attribute defType="com.stambia.rdbms.check.userMessage" id="_q2RbkIbOEe6hMcZPwGwPvA" value="Pas de compte"/>
+      <attribute defType="com.stambia.rdbms.check.rejectCode" id="_tJNHgIbOEe6hMcZPwGwPvA" value="CLIENT_001"/>
+      <attribute defType="com.stambia.rdbms.check.remarks" id="_viWJIIbOEe6hMcZPwGwPvA" value="Ce client n'a pas de compte"/>
+      <attribute defType="com.stambia.rdbms.check.sql" id="_04YZsIbOEe6hMcZPwGwPvA" value="DWH_CLIENT.ID_COMPTE is not null"/>
     </node>
   </node>
   <node defType="com.stambia.rdbms.datastore" id="_5bi_AIVyEe6_ZKlljuliUA" name="DWH_EMAIL">
@@ -303,6 +329,22 @@
     <node defType="com.stambia.rdbms.pk" id="_5iNAoIVyEe6_ZKlljuliUA" name="PK_DWH_EMAIL">
       <node defType="com.stambia.rdbms.colref" id="_5iNAoYVyEe6_ZKlljuliUA" position="1">
         <attribute defType="com.stambia.rdbms.colref.ref" id="_5iNAooVyEe6_ZKlljuliUA" ref="resource.md#_5h764IVyEe6_ZKlljuliUA?fileId=_yVv6wIPiEe6_ZKlljuliUA$type=md$name=ID_CLIENT?"/>
+      </node>
+    </node>
+    <node defType="com.stambia.rdbms.check" id="_wJvqIYisEe6IrbQn0Hrt2g" name="CK_EMAIL_CLIENT">
+      <attribute defType="com.stambia.rdbms.check.rejectCode" id="_CxQ-4IitEe6IrbQn0Hrt2g" value="EM001"/>
+      <attribute defType="com.stambia.rdbms.check.sql" id="_I7JuQIitEe6IrbQn0Hrt2g" value="DWH_EMAIL.ID_CLIENT is not null"/>
+      <attribute defType="com.stambia.rdbms.check.userMessage" id="_RvvwYIitEe6IrbQn0Hrt2g" value="email pas associe a un client"/>
+    </node>
+    <node defType="com.stambia.rdbms.check" id="_RwjBoYitEe6IrbQn0Hrt2g" name="CK_MAIL_VALID">
+      <attribute defType="com.stambia.rdbms.check.userMessage" id="_W39nYIitEe6IrbQn0Hrt2g" value="mail non valide "/>
+      <attribute defType="com.stambia.rdbms.check.sql" id="_gFHTcIitEe6IrbQn0Hrt2g" value="REGEXP_LIKE(DWH_EMAIL.EMAIL, '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$')"/>
+      <attribute defType="com.stambia.rdbms.check.rejectCode" id="_jaM_8IitEe6IrbQn0Hrt2g" value="EM002"/>
+    </node>
+    <node defType="com.stambia.rdbms.fk" id="_o1B0cIiuEe6IrbQn0Hrt2g" name="FK_EMAIL_CLIENT">
+      <node defType="com.stambia.rdbms.relation" id="_o1B0cYiuEe6IrbQn0Hrt2g" position="1">
+        <attribute defType="com.stambia.rdbms.relation.fk" id="_o1B0coiuEe6IrbQn0Hrt2g" ref="resource.md#_5h764IVyEe6_ZKlljuliUA?fileId=_yVv6wIPiEe6_ZKlljuliUA$type=md$name=ID_CLIENT?"/>
+        <attribute defType="com.stambia.rdbms.relation.pk" id="_o1B0c4iuEe6IrbQn0Hrt2g" ref="resource.md#_5pfUYIVyEe6_ZKlljuliUA?fileId=_yVv6wIPiEe6_ZKlljuliUA$type=md$name=ID_CLIENT?"/>
       </node>
     </node>
   </node>
@@ -374,9 +416,9 @@
     <node defType="com.stambia.rdbms.column" id="_5aqOMIVyEe6_ZKlljuliUA" name="PAYS" position="10">
       <attribute defType="com.stambia.rdbms.column.name" id="_5aqOMYVyEe6_ZKlljuliUA" value="PAYS"/>
       <attribute defType="com.stambia.rdbms.column.nullable" id="_5aqOMoVyEe6_ZKlljuliUA" value="1"/>
-      <attribute defType="com.stambia.rdbms.column.charByte" id="_5aqOM4VyEe6_ZKlljuliUA" value="CHAR"/>
+      <attribute defType="com.stambia.rdbms.column.charByte" id="_5aqOM4VyEe6_ZKlljuliUA" value="BYTE"/>
       <attribute defType="com.stambia.rdbms.column.type" id="_5aqONIVyEe6_ZKlljuliUA" value="VARCHAR2"/>
-      <attribute defType="com.stambia.rdbms.column.size" id="_5aqONYVyEe6_ZKlljuliUA" value="5"/>
+      <attribute defType="com.stambia.rdbms.column.size" id="_5aqONYVyEe6_ZKlljuliUA" value="55"/>
     </node>
     <node defType="com.stambia.rdbms.column" id="_5aq1QIVyEe6_ZKlljuliUA" name="QUALITE" position="11">
       <attribute defType="com.stambia.rdbms.column.name" id="_5aq1QYVyEe6_ZKlljuliUA" value="QUALITE"/>
@@ -413,6 +455,17 @@
       <node defType="com.stambia.rdbms.colref" id="_5a4QoYVyEe6_ZKlljuliUA" position="1">
         <attribute defType="com.stambia.rdbms.colref.ref" id="_5a43sIVyEe6_ZKlljuliUA" ref="resource.md#_5ahEQIVyEe6_ZKlljuliUA?fileId=_yVv6wIPiEe6_ZKlljuliUA$type=md$name=ID_CLIENT?"/>
       </node>
+    </node>
+    <node defType="com.stambia.rdbms.fk" id="_6z7xUIlvEe6eVfFnYwgOWA" name="FK_ADRESSE_CLIENT">
+      <node defType="com.stambia.rdbms.relation" id="_6z7xUYlvEe6eVfFnYwgOWA" position="1">
+        <attribute defType="com.stambia.rdbms.relation.fk" id="_6z7xUolvEe6eVfFnYwgOWA" ref="resource.md#_5ahEQIVyEe6_ZKlljuliUA?fileId=_yVv6wIPiEe6_ZKlljuliUA$type=md$name=ID_CLIENT?"/>
+        <attribute defType="com.stambia.rdbms.relation.pk" id="_6z7xU4lvEe6eVfFnYwgOWA" ref="resource.md#_5pfUYIVyEe6_ZKlljuliUA?fileId=_yVv6wIPiEe6_ZKlljuliUA$type=md$name=ID_CLIENT?"/>
+      </node>
+    </node>
+    <node defType="com.stambia.rdbms.check" id="_T41ZMYlwEe6eVfFnYwgOWA" name="CK_ADRESSE_CLIENT">
+      <attribute defType="com.stambia.rdbms.check.userMessage" id="_bJKMMIlwEe6eVfFnYwgOWA" value="Adresse pas associé à un client "/>
+      <attribute defType="com.stambia.rdbms.check.sql" id="_c2LHoIlwEe6eVfFnYwgOWA" value="DWH_ADRESSE.ID_CLIENT is not null"/>
+      <attribute defType="com.stambia.rdbms.check.rejectCode" id="_ditdgIlwEe6eVfFnYwgOWA" value="ADR001"/>
     </node>
   </node>
 </md:node>

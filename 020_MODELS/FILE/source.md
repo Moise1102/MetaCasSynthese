@@ -11,7 +11,7 @@
     <attribute defType="com.stambia.file.file.lineToSkip" id="_b0yKkIUnEe6_ZKlljuliUA" value="0"/>
     <attribute defType="com.stambia.file.file.lastLineToSkip" id="_b0yKkYUnEe6_ZKlljuliUA" value="0"/>
     <attribute defType="com.stambia.file.file.header" id="_b0yxoIUnEe6_ZKlljuliUA" value="0"/>
-    <attribute defType="com.stambia.file.file.physicalName" id="_d-YUUIUnEe6_ZKlljuliUA" value="F_CLIENT_20231110.txt"/>
+    <attribute defType="com.stambia.file.file.physicalName" id="_d-YUUIUnEe6_ZKlljuliUA" value="${~/INTEGRATED_FILE}$"/>
     <node defType="com.stambia.file.field" id="_lVGDMIUnEe6_ZKlljuliUA" name="CHAMP2" position="2">
       <attribute defType="com.stambia.file.field.size" id="_lVGDMYUnEe6_ZKlljuliUA" value="56"/>
       <attribute defType="com.stambia.file.field.type" id="_lVGDMoUnEe6_ZKlljuliUA" value="String"/>
